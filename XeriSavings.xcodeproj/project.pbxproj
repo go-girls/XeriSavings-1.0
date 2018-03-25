@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8AE9B532067EE390019EDAA /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AE9B522067EE390019EDAA /* CreateProjectViewController.swift */; };
 		A8B3BF9C2067D06E00E049FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BF9B2067D06E00E049FC /* AppDelegate.swift */; };
 		A8B3BF9E2067D06E00E049FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BF9D2067D06E00E049FC /* ViewController.swift */; };
 		A8B3BFA12067D06E00E049FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B3BF9F2067D06E00E049FC /* Main.storyboard */; };
 		A8B3BFA32067D06E00E049FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B3BFA22067D06E00E049FC /* Assets.xcassets */; };
 		A8B3BFA62067D06E00E049FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B3BFA42067D06E00E049FC /* LaunchScreen.storyboard */; };
+		A8B3BFAE2067D30A00E049FC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BFAD2067D30A00E049FC /* RegisterViewController.swift */; };
+		A8B3BFB02067D60400E049FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BFAF2067D60400E049FC /* LoginViewController.swift */; };
+		A8B3BFB52067E08600E049FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8B3BFB42067E08600E049FC /* GoogleService-Info.plist */; };
+		D0028847678A89015B4F4795 /* Pods_XeriSavings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023E8CEB5E5D9232F0CD65C5 /* Pods_XeriSavings.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023E8CEB5E5D9232F0CD65C5 /* Pods_XeriSavings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XeriSavings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83255655E9B95D486AAE1AC4 /* Pods-XeriSavings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XeriSavings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings.debug.xcconfig"; sourceTree = "<group>"; };
+		A6EA73C94C4E609FDD9CF084 /* Pods-XeriSavings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XeriSavings.release.xcconfig"; path = "Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings.release.xcconfig"; sourceTree = "<group>"; };
+		A8AE9B522067EE390019EDAA /* CreateProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
 		A8B3BF982067D06E00E049FC /* XeriSavings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XeriSavings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B3BF9B2067D06E00E049FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B3BF9D2067D06E00E049FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		A8B3BFA22067D06E00E049FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B3BFA52067D06E00E049FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B3BFA72067D06E00E049FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B3BFAD2067D30A00E049FC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A8B3BFAF2067D60400E049FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A8B3BFB42067E08600E049FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0028847678A89015B4F4795 /* Pods_XeriSavings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01ECB5F8F9A24CC8AF72521D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				023E8CEB5E5D9232F0CD65C5 /* Pods_XeriSavings.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8B3BF8F2067D06E00E049FC = {
 			isa = PBXGroup;
 			children = (
 				A8B3BF9A2067D06E00E049FC /* XeriSavings */,
 				A8B3BF992067D06E00E049FC /* Products */,
+				CE8F3D3B83604F7EFD4971CF /* Pods */,
+				01ECB5F8F9A24CC8AF72521D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,51 @@
 		A8B3BF9A2067D06E00E049FC /* XeriSavings */ = {
 			isa = PBXGroup;
 			children = (
-				A8B3BF9B2067D06E00E049FC /* AppDelegate.swift */,
-				A8B3BF9D2067D06E00E049FC /* ViewController.swift */,
-				A8B3BF9F2067D06E00E049FC /* Main.storyboard */,
+				A8B3BFB32067E03300E049FC /* SupportingFiles */,
+				A8B3BFB22067E01800E049FC /* View */,
+				A8B3BFB12067DFAD00E049FC /* Controller */,
 				A8B3BFA22067D06E00E049FC /* Assets.xcassets */,
-				A8B3BFA42067D06E00E049FC /* LaunchScreen.storyboard */,
-				A8B3BFA72067D06E00E049FC /* Info.plist */,
 			);
 			path = XeriSavings;
+			sourceTree = "<group>";
+		};
+		A8B3BFB12067DFAD00E049FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8B3BF9B2067D06E00E049FC /* AppDelegate.swift */,
+				A8B3BF9D2067D06E00E049FC /* ViewController.swift */,
+				A8B3BFAF2067D60400E049FC /* LoginViewController.swift */,
+				A8B3BFAD2067D30A00E049FC /* RegisterViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A8B3BFB22067E01800E049FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8B3BF9F2067D06E00E049FC /* Main.storyboard */,
+				A8AE9B522067EE390019EDAA /* CreateProjectViewController.swift */,
+				A8B3BFA42067D06E00E049FC /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A8B3BFB32067E03300E049FC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A8B3BFA72067D06E00E049FC /* Info.plist */,
+				A8B3BFB42067E08600E049FC /* GoogleService-Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CE8F3D3B83604F7EFD4971CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83255655E9B95D486AAE1AC4 /* Pods-XeriSavings.debug.xcconfig */,
+				A6EA73C94C4E609FDD9CF084 /* Pods-XeriSavings.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8B3BFAA2067D06E00E049FC /* Build configuration list for PBXNativeTarget "XeriSavings" */;
 			buildPhases = (
+				93394F73DBFD95DFA15BDB9E /* [CP] Check Pods Manifest.lock */,
 				A8B3BF942067D06E00E049FC /* Sources */,
 				A8B3BF952067D06E00E049FC /* Frameworks */,
 				A8B3BF962067D06E00E049FC /* Resources */,
+				EE5D367DD5A892254C96B426 /* [CP] Embed Pods Frameworks */,
+				10C3FD1A867523FD588FE906 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8B3BFA62067D06E00E049FC /* LaunchScreen.storyboard in Resources */,
+				A8B3BFB52067E08600E049FC /* GoogleService-Info.plist in Resources */,
 				A8B3BFA32067D06E00E049FC /* Assets.xcassets in Resources */,
 				A8B3BFA12067D06E00E049FC /* Main.storyboard in Resources */,
 			);
@@ -131,11 +195,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10C3FD1A867523FD588FE906 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93394F73DBFD95DFA15BDB9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XeriSavings-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5D367DD5A892254C96B426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8B3BF942067D06E00E049FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B3BFB02067D60400E049FC /* LoginViewController.swift in Sources */,
+				A8B3BFAE2067D30A00E049FC /* RegisterViewController.swift in Sources */,
+				A8AE9B532067EE390019EDAA /* CreateProjectViewController.swift in Sources */,
 				A8B3BF9E2067D06E00E049FC /* ViewController.swift in Sources */,
 				A8B3BF9C2067D06E00E049FC /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +395,7 @@
 		};
 		A8B3BFAB2067D06E00E049FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83255655E9B95D486AAE1AC4 /* Pods-XeriSavings.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +410,7 @@
 		};
 		A8B3BFAC2067D06E00E049FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EA73C94C4E609FDD9CF084 /* Pods-XeriSavings.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
