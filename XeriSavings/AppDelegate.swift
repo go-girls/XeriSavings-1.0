@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //**** Configuring Firebase *****
         FIRApp.configure()
-        let lawnInfoDatabase = FIRDatabase.database().reference()
-        lawnInfoDatabase.setValue("Testing Storing Data (Avyu)")
+        
         return true
     }
 
@@ -40,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
