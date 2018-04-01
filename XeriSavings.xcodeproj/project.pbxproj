@@ -16,6 +16,7 @@
 		A8B3BFAE2067D30A00E049FC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BFAD2067D30A00E049FC /* RegisterViewController.swift */; };
 		A8B3BFB02067D60400E049FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BFAF2067D60400E049FC /* LoginViewController.swift */; };
 		A8B3BFB52067E08600E049FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8B3BFB42067E08600E049FC /* GoogleService-Info.plist */; };
+		A8BEEE4E206DEA3900D921DC /* AllAboutYourLawnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BEEE4D206DEA3900D921DC /* AllAboutYourLawnViewController.swift */; };
 		D0028847678A89015B4F4795 /* Pods_XeriSavings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023E8CEB5E5D9232F0CD65C5 /* Pods_XeriSavings.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		A8B3BFAD2067D30A00E049FC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A8B3BFAF2067D60400E049FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A8B3BFB42067E08600E049FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8BEEE4D206DEA3900D921DC /* AllAboutYourLawnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAboutYourLawnViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,8 @@
 			children = (
 				A8B3BF9A2067D06E00E049FC /* XeriSavings */,
 				A8B3BF992067D06E00E049FC /* Products */,
-				CE8F3D3B83604F7EFD4971CF /* Pods */,
 				01ECB5F8F9A24CC8AF72521D /* Frameworks */,
+				CE8F3D3B83604F7EFD4971CF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +90,8 @@
 		A8B3BFB12067DFAD00E049FC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A8BEEE4D206DEA3900D921DC /* AllAboutYourLawnViewController.swift */,
+				A8AE9B522067EE390019EDAA /* CreateProjectViewController.swift */,
 				A8B3BF9B2067D06E00E049FC /* AppDelegate.swift */,
 				A8B3BF9D2067D06E00E049FC /* ViewController.swift */,
 				A8B3BFAF2067D60400E049FC /* LoginViewController.swift */,
@@ -100,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				A8B3BF9F2067D06E00E049FC /* Main.storyboard */,
-				A8AE9B522067EE390019EDAA /* CreateProjectViewController.swift */,
 				A8B3BFA42067D06E00E049FC /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -236,11 +239,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8B3BFB02067D60400E049FC /* LoginViewController.swift in Sources */,
+				A8BEEE4E206DEA3900D921DC /* AllAboutYourLawnViewController.swift in Sources */,
 				A8B3BFAE2067D30A00E049FC /* RegisterViewController.swift in Sources */,
 				A8AE9B532067EE390019EDAA /* CreateProjectViewController.swift in Sources */,
 				A8B3BF9E2067D06E00E049FC /* ViewController.swift in Sources */,
@@ -404,7 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cluboreo.XeriSavings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -419,7 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cluboreo.XeriSavings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

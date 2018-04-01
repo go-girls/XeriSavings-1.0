@@ -6,8 +6,11 @@ target 'XeriSavings' do
   use_frameworks!
 
   # Pods for XeriSavings
-pod 'Firebase', '~>3.17'
+pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'DLRadioButton', '~> 1.4'
+
+
 
 end
