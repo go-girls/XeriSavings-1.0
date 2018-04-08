@@ -11,6 +11,7 @@ import Firebase
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -26,9 +27,13 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerUserClicked(_ sender: UIButton) {
+        if ((emailTextField?.text?.count)!>3 || (passwordTextField?.text?.count) == 0) {
+            errorLabel.text = "invalid registration email and/or password"
+            }
         FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
             if error != nil {
                 print(error!)
+                return
             } else {
                 print("Registration Successful")
                 self.performSegue(withIdentifier: "goToCreateYourProject", sender: self)

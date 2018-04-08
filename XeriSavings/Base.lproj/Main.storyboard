@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YmF-5S-8Mu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YmF-5S-8Mu">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Thin</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
@@ -136,9 +131,15 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="LoginAction:" destination="WO5-Lw-WDL" eventType="touchUpInside" id="R9A-xP-RrT"/>
-                                    <segue destination="4JQ-eE-E1E" kind="show" identifier="goToCreateYourProject" id="sRP-97-wNH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qE-1f-ovv">
+                                <rect key="frame" x="179" y="731" width="410" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FZf-jE-Oh9"/>
@@ -148,12 +149,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="t2O-z8-QLt" id="bqQ-UR-aJJ"/>
+                        <outlet property="errorLabel" destination="0qE-1f-ovv" id="ouC-59-K0H"/>
                         <outlet property="passwordTextField" destination="ZH5-Pn-LLM" id="kX2-C4-vdw"/>
+                        <segue destination="4JQ-eE-E1E" kind="show" id="jjX-dH-3lM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Taz-Bv-t3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="447" y="-65"/>
+            <point key="canvasLocation" x="446.875" y="-65.0390625"/>
         </scene>
         <!--Home-->
         <scene sceneID="XCd-7O-6hR">
@@ -693,9 +696,15 @@
                                 </state>
                                 <connections>
                                     <action selector="registerUserClicked:" destination="obh-UV-STL" eventType="touchUpInside" id="GQ2-eX-Vvt"/>
-                                    <segue destination="4JQ-eE-E1E" kind="show" identifier="goToCreateYourProject" id="Pdy-s0-jAw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-jO-5KV">
+                                <rect key="frame" x="164" y="725" width="441" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zrw-i0-Ng0"/>
@@ -705,12 +714,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="DOf-qt-BX7" id="Q4V-6n-0TX"/>
+                        <outlet property="errorLabel" destination="YKN-jO-5KV" id="USc-TY-j5V"/>
                         <outlet property="passwordTextField" destination="Hyz-ag-2nO" id="c9G-t1-uwo"/>
+                        <segue destination="4JQ-eE-E1E" kind="show" id="ZU7-hk-dV9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpg-bs-NE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="-1290"/>
+            <point key="canvasLocation" x="1488.28125" y="-1290.234375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfQ-QS-Uul">
@@ -733,7 +744,6 @@
         <!--Table View Controller-->
         <scene sceneID="q1C-wh-hmJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-6U-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="odc-ac-tNt" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gir-ZV-Pso">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
@@ -1116,6 +1126,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-6U-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-438" y="-65"/>
         </scene>
@@ -1141,6 +1152,6 @@
         <image name="grass" width="394" height="173"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C9r-6q-LPc"/>
+        <segue reference="jjX-dH-3lM"/>
     </inferredMetricsTieBreakers>
 </document>
