@@ -131,9 +131,15 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="LoginAction:" destination="WO5-Lw-WDL" eventType="touchUpInside" id="R9A-xP-RrT"/>
-                                    <segue destination="4JQ-eE-E1E" kind="show" identifier="goToCreateYourProject" id="sRP-97-wNH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qE-1f-ovv">
+                                <rect key="frame" x="179" y="731" width="410" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FZf-jE-Oh9"/>
@@ -143,12 +149,18 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="t2O-z8-QLt" id="bqQ-UR-aJJ"/>
+                        <outlet property="errorLabel" destination="0qE-1f-ovv" id="ouC-59-K0H"/>
                         <outlet property="passwordTextField" destination="ZH5-Pn-LLM" id="kX2-C4-vdw"/>
+                        <segue destination="4JQ-eE-E1E" kind="show" id="jjX-dH-3lM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Taz-Bv-t3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="22" y="-817"/>
+=======
+            <point key="canvasLocation" x="446.875" y="-65.0390625"/>
+>>>>>>> 38f85ed42dc27cb716f38915b0841d027061a147
         </scene>
         <!--Home-->
         <scene sceneID="XCd-7O-6hR">
@@ -769,9 +781,15 @@
                                 </state>
                                 <connections>
                                     <action selector="registerUserClicked:" destination="obh-UV-STL" eventType="touchUpInside" id="GQ2-eX-Vvt"/>
-                                    <segue destination="4JQ-eE-E1E" kind="show" identifier="goToCreateYourProject" id="Pdy-s0-jAw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-jO-5KV">
+                                <rect key="frame" x="164" y="725" width="441" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zrw-i0-Ng0"/>
@@ -781,12 +799,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="DOf-qt-BX7" id="Q4V-6n-0TX"/>
+                        <outlet property="errorLabel" destination="YKN-jO-5KV" id="USc-TY-j5V"/>
                         <outlet property="passwordTextField" destination="Hyz-ag-2nO" id="c9G-t1-uwo"/>
+                        <segue destination="4JQ-eE-E1E" kind="show" id="ZU7-hk-dV9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpg-bs-NE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-660" y="-817"/>
+            <point key="canvasLocation" x="1488.28125" y="-1290.234375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfQ-QS-Uul">
@@ -1217,8 +1237,6 @@
         <image name="grass" width="394" height="173"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Jp-Ah-BYn"/>
-        <segue reference="Pdy-s0-jAw"/>
-        <segue reference="Xeq-py-Gce"/>
+        <segue reference="jjX-dH-3lM"/>
     </inferredMetricsTieBreakers>
 </document>
