@@ -14,12 +14,14 @@ import DLRadioButton
 class AllAboutYourLawnViewController: UIViewController {
     
     var selectedYardSize : Bool = false
-    @IBOutlet weak var grassType: DLRadioButton!
-    
-    @IBOutlet weak var summerWaterBillTextField: UITextField!
-    
-    @IBOutlet weak var WinterWaterBillTextField: UITextField!
+    var selectedGrassType : Bool = false
     var aboutYourLawnDB : FIRDatabaseReference?
+    
+    @IBOutlet weak var grassType: DLRadioButton!
+    @IBOutlet weak var summerWaterBillTextField: UITextField!
+    @IBOutlet weak var WinterWaterBillTextField: UITextField!
+    @IBOutlet weak var typeOfGrassErrorLabel: UILabel!
+    @IBOutlet weak var yardSizeErrorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +48,6 @@ class AllAboutYourLawnViewController: UIViewController {
         
     }
     
-    //
     func calculateWaterUsage() -> Float {
         let summerUsage = (summerWaterBillTextField.text as NSString?)?.floatValue
         let winterUsage = (WinterWaterBillTextField.text as NSString?)?.floatValue
@@ -72,6 +73,7 @@ class AllAboutYourLawnViewController: UIViewController {
         }
        
         aboutYourLawnDB?.child("\(uid)/typeOfGrass").setValue(typeOfGrass)
+        selectedGrassType = true
        
     }
     
@@ -98,17 +100,17 @@ class AllAboutYourLawnViewController: UIViewController {
     @IBAction func goToRecommendationsAction(_ sender: UIBarButtonItem) {
         if selectedYardSize {
             performSegue(withIdentifier: "goToRecommendations", sender: self)
+        } else {
+            yardSizeErrorLabel.text = "Please select an option"
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func goToSelectYardSizeAction(_ sender: UIBarButtonItem) {
+        if selectedGrassType {
+            performSegue(withIdentifier: "goToLawnSizeSelectionView", sender: self)
+        } else{
+            typeOfGrassErrorLabel.text = "Please select an option"
+        }
     }
-    */
-
+    
 }
