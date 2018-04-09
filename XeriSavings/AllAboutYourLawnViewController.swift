@@ -13,6 +13,7 @@ import DLRadioButton
 
 class AllAboutYourLawnViewController: UIViewController {
     
+    var selectedYardSize : Bool = false
     @IBOutlet weak var grassType: DLRadioButton!
     
     @IBOutlet weak var summerWaterBillTextField: UITextField!
@@ -37,7 +38,7 @@ class AllAboutYourLawnViewController: UIViewController {
         let username : String = (FIRAuth.auth()?.currentUser?.email)!
         let uid : String = (FIRAuth.auth()?.currentUser?.uid)!
         
-        let aboutYourLawn = ["email":username as String!,
+        let aboutYourLawn = ["email":username as String?,
                              "WaterUsage": String(calculateWaterUsage())]
         
         aboutYourLawnDB?.child(uid).setValue(aboutYourLawn)
@@ -47,10 +48,10 @@ class AllAboutYourLawnViewController: UIViewController {
     
     //
     func calculateWaterUsage() -> Float {
-        let summerUsage = (summerWaterBillTextField.text as NSString!).floatValue
-        let winterUsage = (WinterWaterBillTextField.text as NSString!).floatValue
+        let summerUsage = (summerWaterBillTextField.text as NSString?)?.floatValue
+        let winterUsage = (WinterWaterBillTextField.text as NSString?)?.floatValue
         
-        return summerUsage - winterUsage
+        return summerUsage! - winterUsage!
         
     }
     //Making sure the computer can differ from the grass type by the tags, and saving it to the Firebase.
@@ -70,7 +71,7 @@ class AllAboutYourLawnViewController: UIViewController {
             typeOfGrass = "Habiturf"
         }
        
-        aboutYourLawnDB?.child("\(uid)/typeOfGrass").setValue(["name": typeOfGrass])
+        aboutYourLawnDB?.child("\(uid)/typeOfGrass").setValue(typeOfGrass)
        
     }
     
@@ -88,21 +89,17 @@ class AllAboutYourLawnViewController: UIViewController {
             yardSize = 15000
         }
         
-        aboutYourLawnDB?.child("\(uid)/yardSize").setValue(["size": yardSize])
+        aboutYourLawnDB?.child("\(uid)/yardSize").setValue(yardSize)
+        selectedYardSize = true
         
     }
     
-    @IBAction func shadyOrSunny(_ sender: DLRadioButton) {
-        var shadyOrSunny : String
-        let uid : String = (FIRAuth.auth()?.currentUser?.uid)!
-        if sender.tag == 1 {
-           shadyOrSunny = "Shady"
-        }else {
-            shadyOrSunny = "Sunny"
+    
+    @IBAction func goToRecommendationsAction(_ sender: UIBarButtonItem) {
+        if selectedYardSize {
+            performSegue(withIdentifier: "goToRecommendations", sender: self)
+        }
     }
-    
-    
-    aboutYourLawnDB?.child("\(uid)/shadyOrSunny").setValue(["name": shadyOrSunny])
     
     /*
     // MARK: - Navigation
@@ -114,5 +111,4 @@ class AllAboutYourLawnViewController: UIViewController {
     }
     */
 
-}
 }

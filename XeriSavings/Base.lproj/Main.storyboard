@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YmF-5S-8Mu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YmF-5S-8Mu">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Thin</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
@@ -30,7 +25,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-cV-ga9">
                                 <rect key="frame" x="0.0" y="715" width="768" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99733227489999998" green="0.49322324989999999" blue="0.30289229750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.28209063234541948" blue="0.37826534455197713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
                                 <color key="tintColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login">
@@ -43,7 +38,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWE-q6-E8o">
                                 <rect key="frame" x="0.0" y="590" width="768" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.82762163879999995" green="0.67921775579999999" blue="0.01809206046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.37993508577346802" blue="0.44312003254890442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
                                 <color key="tintColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Register">
@@ -56,7 +51,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjn-8A-qN7">
                                 <rect key="frame" x="0.0" y="465" width="768" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.54011076690000004" green="0.40717071290000001" blue="0.41005551820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.30548182129859924" green="0.72253292798995972" blue="0.7327154278755188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
                                 <color key="tintColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Xeriscape Gallery">
@@ -69,7 +64,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zi2-zR-raZ">
                                 <rect key="frame" x="0.0" y="340" width="768" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68749839069999996" green="0.43542385099999997" blue="0.33524644370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.66518282890319824" green="0.84415143728256226" blue="0.82443231344223022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
                                 <color key="tintColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Guest">
@@ -94,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597" y="-1220"/>
+            <point key="canvasLocation" x="39" y="-1526"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="9x5-ex-isU">
@@ -153,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Taz-Bv-t3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="447" y="-65"/>
+            <point key="canvasLocation" x="22" y="-817"/>
         </scene>
         <!--Home-->
         <scene sceneID="XCd-7O-6hR">
@@ -192,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWI-7h-2F8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="-17"/>
+            <point key="canvasLocation" x="859" y="-800"/>
         </scene>
         <!--All About Your Lawn-->
         <scene sceneID="uQD-rx-LuS">
@@ -269,7 +264,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbS-hl-z2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KTe-Ob-EbH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2173" y="-17"/>
+            <point key="canvasLocation" x="859" y="-90"/>
         </scene>
         <!--Type Of Grass-->
         <scene sceneID="ilM-xe-FiB">
@@ -435,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2v-fx-PEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3144.53125" y="-44.53125"/>
+            <point key="canvasLocation" x="1682" y="-90"/>
         </scene>
         <!--Size of Your Lawn-->
         <scene sceneID="b1R-9r-oTA">
@@ -552,6 +547,10 @@
                                     <action selector="saveSizeOfYard:" destination="rPM-zS-DVF" eventType="touchUpInside" id="pKC-fA-cyA"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="6gf-JL-XH1">
+                                <rect key="frame" x="0.0" y="861" width="768" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="p9D-9V-mho"/>
@@ -559,95 +558,172 @@
                     <navigationItem key="navigationItem" title="Size of Your Lawn" id="dBD-JY-EcS">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="aN2-LF-Hnh">
                             <connections>
-                                <segue destination="PGK-9h-P0A" kind="show" id="UEq-aX-HBc"/>
+                                <action selector="goToRecommendationsAction:" destination="rPM-zS-DVF" id="W5Z-gD-0wf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="ciJ-iN-Ghz" kind="show" identifier="goToRecommendations" id="Obu-6F-EF9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ees-Pg-TwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3860.9375" y="-45.1171875"/>
+            <point key="canvasLocation" x="1661" y="-830"/>
         </scene>
-        <!--All About Your Lawn View Controller-->
-        <scene sceneID="IE5-TW-u5d">
+        <!--Reccomendations-->
+        <scene sceneID="2Cq-Vn-UKi">
             <objects>
-                <viewController id="PGK-9h-P0A" customClass="AllAboutYourLawnViewController" customModule="XeriSavings" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wyx-0B-IJN">
+                <viewController id="ciJ-iN-Ghz" customClass="ReccomendationsViewController" customModule="XeriSavings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Buj-nD-wQl">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shady" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vb-9P-hm5">
-                                <rect key="frame" x="76" y="242" width="213" height="223"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations for creating a better future for youself and future generations by saving water." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-ea-kni">
+                                <rect key="frame" x="-1" y="64" width="768" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="70"/>
+                                <color key="backgroundColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="26"/>
+                                <nil key="textColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Enivornment Prtotection Agency quotes outdoor water waste as 50% because of evaporation and wind." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8t-NO-90n">
+                                <rect key="frame" x="0.0" y="306" width="768" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35570952300000003" green="0.54583221670000004" blue="0.86539334059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="With 25% Xeriscaping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKs-XQ-NGS">
+                                <rect key="frame" x="1" y="405" width="318" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCn-Fg-Z7K">
-                                <rect key="frame" x="76" y="526" width="213" height="223"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Approx.  Annual Savings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-CR-Jmj">
+                                <rect key="frame" x="326" y="405" width="442" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="70"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is the area you want to xeriscape?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxc-Ew-MHh">
-                                <rect key="frame" x="76" y="115" width="609" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40 Gallons Of Water" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPS-Bj-PPx">
+                                <rect key="frame" x="327" y="459" width="173" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="43"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fH9-aH-jQO">
+                                <rect key="frame" x="555" y="459" width="213" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NASA's Ames Research Center predict that lawns cover 128,000 km in the U.S making grass the number one irrigated crop." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-fs-RpS">
+                                <rect key="frame" x="-1" y="533" width="768" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="With 50% Xeriscaping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McV-aZ-Z6C">
+                                <rect key="frame" x="-1" y="618" width="318" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-qD-uUH" customClass="DLRadioButton">
-                                <rect key="frame" x="297" y="585" width="148" height="104"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40 Gallons Of Water" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe4-Cp-wEv">
+                                <rect key="frame" x="325" y="672" width="173" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                        <color key="value" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                        <real key="value" value="21"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                        <color key="value" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdB-Zp-NnS">
+                                <rect key="frame" x="553" y="672" width="213" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="With 10% Xeriscaping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJK-AO-cfJ">
+                                <rect key="frame" x="-1" y="163" width="297" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgS-dE-kQJ">
+                                <rect key="frame" x="545" y="227" width="222" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40 Gallons Of Water" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOz-Ad-Ym8">
+                                <rect key="frame" x="304" y="229" width="173" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Approx.  Annual Savings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M91-nj-vl4">
+                                <rect key="frame" x="283" y="184" width="484" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-Qg-73N">
+                                <rect key="frame" x="1" y="847" width="767" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZJ-wc-mTJ">
+                                <rect key="frame" x="1" y="751" width="767" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8661367297" green="0.88239759210000002" blue="0.88651090860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Click to view our gallery for inspiration and ideas to xeriscape your lawn">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="saveGrassType:" destination="4fF-gc-KHG" eventType="touchUpInside" id="hHr-Qn-uDn"/>
-                                    <action selector="saveSizeOfYard:" destination="rPM-zS-DVF" eventType="touchUpInside" id="uW1-pb-fTa"/>
-                                    <action selector="shadyOrSunny:" destination="PGK-9h-P0A" eventType="touchUpInside" id="RFo-DL-akc"/>
+                                    <segue destination="odc-ac-tNt" kind="show" identifier="goToGallery" id="1Jp-Ah-BYn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzK-aF-M0O" customClass="DLRadioButton">
-                                <rect key="frame" x="297" y="301" width="148" height="104"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Approx.  Annual Savings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ho2-yY-HNQ">
+                                <rect key="frame" x="326" y="632" width="442" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                        <color key="value" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                        <real key="value" value="21"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                        <color key="value" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="saveGrassType:" destination="4fF-gc-KHG" eventType="touchUpInside" id="q3M-Lh-92N"/>
-                                    <action selector="saveSizeOfYard:" destination="rPM-zS-DVF" eventType="touchUpInside" id="qxk-Hi-6xY"/>
-                                    <action selector="saveSunnyOrShady:" destination="TSa-K5-Mgl" eventType="touchUpInside" id="yea-gX-Ly0"/>
-                                    <action selector="shadyOrSunny:" destination="PGK-9h-P0A" eventType="touchUpInside" id="Zdl-fq-iXy"/>
-                                    <outletCollection property="otherButtons" destination="fh4-qD-uUH" id="rwc-Xz-mQP"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="POQ-Rf-QO7"/>
+                        <viewLayoutGuide key="safeArea" id="XY1-86-e1P"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Reccomendations" id="NhW-v1-8UM">
+                        <barButtonItem key="rightBarButtonItem" title="Welcome" id="yty-dl-QvG">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="goToWelcomePage" id="VBK-GS-2KI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fiftyPercentMoneySavings" destination="NdB-Zp-NnS" id="fqk-pS-Zxx"/>
+                        <outlet property="fiftyPercentWaterSavings" destination="Pe4-Cp-wEv" id="kxZ-Zy-7rX"/>
+                        <outlet property="tenPercentMoneySavings" destination="GgS-dE-kQJ" id="psW-k6-NkX"/>
+                        <outlet property="tenPercentWaterSavings" destination="HOz-Ad-Ym8" id="mz9-RQ-MDq"/>
+                        <outlet property="twentyFivePercentWaterSavings" destination="OPS-Bj-PPx" id="mBp-sI-VcV"/>
+                        <outlet property="twnetyFiveMoneySavings" destination="fH9-aH-jQO" id="9u8-5m-1Dq"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v9g-CE-48m" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="TSa-K5-Mgl" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vb-Wp-bJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4640.625" y="-45.1171875"/>
+            <point key="canvasLocation" x="2318" y="-830"/>
         </scene>
         <!--Register-->
         <scene sceneID="vfm-Ii-EJ1">
@@ -710,7 +786,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpg-bs-NE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="-1290"/>
+            <point key="canvasLocation" x="-660" y="-817"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfQ-QS-Uul">
@@ -728,12 +804,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUW-iU-NNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250" y="-1220"/>
+            <point key="canvasLocation" x="-832" y="-1554"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="q1C-wh-hmJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-6U-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="odc-ac-tNt" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gir-ZV-Pso">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
@@ -860,7 +935,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ecotopes" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-IZ-eGT">
-                                                    <rect key="frame" x="20" y="11" width="209" height="188"/>
+                                                    <rect key="frame" x="20" y="0.0" width="209" height="188"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -880,17 +955,17 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ecotopes1" translatesAutoresizingMaskIntoConstraints="NO" id="ez0-1M-Wch">
+                                                    <rect key="frame" x="457" y="5" width="291" height="199"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="This yard is in an area with large rocks and the yard shows that. They also have " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNO-Fd-rdi">
-                                                    <rect key="frame" x="171" y="0.0" width="270" height="210"/>
+                                                    <rect key="frame" x="179" y="-6" width="270" height="210"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ecotopes1" translatesAutoresizingMaskIntoConstraints="NO" id="ez0-1M-Wch">
-                                                    <rect key="frame" x="457" y="5" width="291" height="199"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1116,8 +1191,9 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-6U-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-438" y="-65"/>
+            <point key="canvasLocation" x="1391" y="-1506"/>
         </scene>
     </scenes>
     <resources>
@@ -1141,6 +1217,8 @@
         <image name="grass" width="394" height="173"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C9r-6q-LPc"/>
+        <segue reference="1Jp-Ah-BYn"/>
+        <segue reference="Pdy-s0-jAw"/>
+        <segue reference="Xeq-py-Gce"/>
     </inferredMetricsTieBreakers>
 </document>
