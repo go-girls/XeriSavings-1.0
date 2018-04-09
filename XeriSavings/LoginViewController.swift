@@ -28,15 +28,15 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func LoginAction(_ sender: UIButton) {
-        if ((emailTextField?.text?.count)!>3 || (passwordTextField?.text?.count) == 0) {
-            errorLabel.text = "invalid login username and/or passowrd"
-            }
+        if ((emailTextField?.text?.count)! <  3 && (passwordTextField?.text?.count) == 0) {
+            errorLabel.text = "Invalid login username/passowrd"
+            return
+        }
         FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
             if error != nil {
                 print(error!)
                 return
             } else {
-                print("login Successful")
                 self.performSegue(withIdentifier: "goToCreateYourProject", sender: self)
             }
         })

@@ -110,18 +110,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-z8-QLt">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-z8-QLt">
                                 <rect key="frame" x="245" y="411" width="279" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZH5-Pn-LLM">
                                 <rect key="frame" x="245" y="521" width="279" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLr-gC-B5o">
@@ -134,10 +134,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qE-1f-ovv">
-                                <rect key="frame" x="179" y="731" width="410" height="90"/>
+                                <rect key="frame" x="179" y="329" width="410" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.94398099184036255" green="0.077558569610118866" blue="0.040505416691303253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -151,16 +151,12 @@
                         <outlet property="emailTextField" destination="t2O-z8-QLt" id="bqQ-UR-aJJ"/>
                         <outlet property="errorLabel" destination="0qE-1f-ovv" id="ouC-59-K0H"/>
                         <outlet property="passwordTextField" destination="ZH5-Pn-LLM" id="kX2-C4-vdw"/>
-                        <segue destination="4JQ-eE-E1E" kind="show" id="jjX-dH-3lM"/>
+                        <segue destination="4JQ-eE-E1E" kind="show" identifier="goToCreateYourProject" id="jjX-dH-3lM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Taz-Bv-t3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="22" y="-817"/>
-=======
-            <point key="canvasLocation" x="446.875" y="-65.0390625"/>
->>>>>>> 38f85ed42dc27cb716f38915b0841d027061a147
+            <point key="canvasLocation" x="-535.15625" y="-770.5078125"/>
         </scene>
         <!--Home-->
         <scene sceneID="XCd-7O-6hR">
@@ -199,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWI-7h-2F8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="-800"/>
+            <point key="canvasLocation" x="859" y="-742"/>
         </scene>
         <!--All About Your Lawn-->
         <scene sceneID="uQD-rx-LuS">
@@ -276,7 +272,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbS-hl-z2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KTe-Ob-EbH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="859" y="-90"/>
+            <point key="canvasLocation" x="859" y="-35"/>
         </scene>
         <!--Type Of Grass-->
         <scene sceneID="ilM-xe-FiB">
@@ -442,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2v-fx-PEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682" y="-90"/>
+            <point key="canvasLocation" x="1558" y="-567"/>
         </scene>
         <!--Size of Your Lawn-->
         <scene sceneID="b1R-9r-oTA">
@@ -580,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ees-Pg-TwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="-830"/>
+            <point key="canvasLocation" x="2303" y="-470"/>
         </scene>
         <!--Reccomendations-->
         <scene sceneID="2Cq-Vn-UKi">
@@ -784,10 +780,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-jO-5KV">
-                                <rect key="frame" x="164" y="725" width="441" height="82"/>
+                                <rect key="frame" x="164" y="276" width="441" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.94398099184036255" green="0.077558569610118866" blue="0.040505416691303253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -801,12 +797,12 @@
                         <outlet property="emailTextField" destination="DOf-qt-BX7" id="Q4V-6n-0TX"/>
                         <outlet property="errorLabel" destination="YKN-jO-5KV" id="USc-TY-j5V"/>
                         <outlet property="passwordTextField" destination="Hyz-ag-2nO" id="c9G-t1-uwo"/>
-                        <segue destination="4JQ-eE-E1E" kind="show" id="ZU7-hk-dV9"/>
+                        <segue destination="4JQ-eE-E1E" kind="show" identifier="goToCreateYourProject" id="ZU7-hk-dV9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpg-bs-NE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1488.28125" y="-1290.234375"/>
+            <point key="canvasLocation" x="204" y="-742"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfQ-QS-Uul">
@@ -1237,6 +1233,9 @@
         <image name="grass" width="394" height="173"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="cv5-Zt-wig"/>
+        <segue reference="OHG-47-u2k"/>
         <segue reference="jjX-dH-3lM"/>
+        <segue reference="VBK-GS-2KI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -22,6 +22,16 @@ class WelcomeViewController: UIViewController {
     }
     
 
+    @IBAction func guestLoginAction(_ sender: Any) {
+        FIRAuth.auth()?.signIn(withEmail: "fllcluboreo@gmail.com", password: "oreogirls!", completion: { (user, error) in
+            if error != nil {
+                print(error!)
+                return
+            } else {
+                self.performSegue(withIdentifier: "gotoCreateProjectFromGuest", sender: self)
+            }
+        })    }
+    
     /*
     // MARK: - Navigation
 
