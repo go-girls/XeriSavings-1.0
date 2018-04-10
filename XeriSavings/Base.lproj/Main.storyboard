@@ -80,7 +80,7 @@
                                 <color key="backgroundColor" red="0.8389197461993223" green="0.855712890625" blue="0.84607399896638735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
                                 <color key="tintColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Settings">
+                                <state key="normal" title="About">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -173,7 +173,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-Ji-GS2">
-                                <rect key="frame" x="406" y="445" width="275" height="42"/>
+                                <rect key="frame" x="406" y="434" width="275" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                 <state key="normal" title="Facebook: @ClubOreoFLL">
@@ -181,13 +181,25 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-SK-aSd">
-                                <rect key="frame" x="33" y="424" width="231" height="63"/>
+                                <rect key="frame" x="76" y="424" width="145" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="43"/>
-                                <state key="normal" title="Social Media">
+                                <state key="normal" title="Website">
                                     <color key="titleColor" red="0.029735768209999999" green="0.083126552399999998" blue="0.34334534410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcH-wz-tbz">
+                                <rect key="frame" x="20" y="519" width="358" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <state key="normal" title="https://www.cluboreo.com">
+                                    <color key="titleColor" red="0.35570952300000003" green="0.54583221670000004" blue="0.86539334059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lAG-uG-deA">
+                                <rect key="frame" x="386" y="484" width="406" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Fvg-ba-wzO"/>
@@ -209,6 +221,10 @@
                                 <rect key="frame" x="0.0" y="743" width="768" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="j2m-rl-N77">
+                                <rect key="frame" x="151" y="248" width="406" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC6-E0-grM">
                                 <rect key="frame" x="20" y="398" width="161" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -220,14 +236,6 @@
                                     <segue destination="kDd-RQ-KIc" kind="show" identifier="contactUs" id="YN7-b2-oaD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-Ut-JVc">
-                                <rect key="frame" x="321" y="187" width="66" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="34"/>
-                                <state key="normal" title="Help">
-                                    <color key="titleColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xul-vN-UlE">
                                 <rect key="frame" x="497" y="400" width="262" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -235,22 +243,10 @@
                                 <state key="normal" title="Terms &amp; Conditions">
                                     <color key="titleColor" red="0.35570952300000003" green="0.54583221670000004" blue="0.86539334059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zh-7B-8Aa">
-                                <rect key="frame" x="202" y="586" width="304" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
-                                <state key="normal" title="About The Developer's">
-                                    <color key="titleColor" red="0.029735768209999999" green="0.083126552399999998" blue="0.34334534410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
                                 <connections>
-                                    <segue destination="BTN-7D-4U8" kind="show" identifier="goToAboutYourDevelopers" id="Dga-tl-PFt"/>
+                                    <segue destination="7hK-m4-2wX" kind="show" id="Fwn-wT-bDV"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="j2m-rl-N77">
-                                <rect key="frame" x="151" y="248" width="406" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ILt-jF-fSk"/>
@@ -261,32 +257,43 @@
             <point key="canvasLocation" x="779.6875" y="-2204.296875"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="mnw-yr-L4k">
+        <scene sceneID="QYx-ie-1qz">
             <objects>
-                <viewController id="BTN-7D-4U8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b5M-ff-Hck">
+                <viewController id="7hK-m4-2wX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fK5-6Y-rFG">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="ixI-ND-FZE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29h-mZ-yr5">
+                                <rect key="frame" x="63" y="103" width="664" height="632"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">We are Club Oreo, #14938, an all-girls FLL team. Club Oreo will not share personal information with others for purposes of direct marketing. Club Oreo will not be held responsible for lost, stolen, or shared information regarding: email address, and/or passwords. 
+
+Club Oreo does not guarantee that the app or any content, service or feature of the app will be error-free or uninterrupted, or that any defects will be corrected, or that your use of the site will provide specific results. Please also regard that the reccomendations are only estimates, and not exact data. We calculated this based on the SLIDE formula. 
+
+Any participation in this app will constitute acceptance of this agreement. If you do not agree to abide by the above, please do not use this app.                
+I agree to the above statement provided by Club Oreo
+</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="7Rl-bZ-IJg">
                                 <rect key="frame" x="0.0" y="743" width="768" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We are an all girls, 3rd years 7th grade FLL team.  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoE-62-flB">
-                                <rect key="frame" x="208" y="254" width="356" height="21"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7u-AV-6PE">
+                                <rect key="frame" x="631" y="689" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="15h-ye-52V"/>
+                        <viewLayoutGuide key="safeArea" id="pU7-Id-lK3"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MMe-Se-G0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kio-gO-Akz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1536" y="-2199"/>
+            <point key="canvasLocation" x="1487.5" y="-2653.125"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="9x5-ex-isU">
@@ -331,9 +338,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qE-1f-ovv">
-                                <rect key="frame" x="179" y="329" width="410" height="74"/>
+                                <rect key="frame" x="32" y="329" width="700" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.94398099184036255" green="0.077558569610118866" blue="0.040505416691303253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -409,39 +416,46 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-iX-TJ2">
                                 <rect key="frame" x="0.0" y="135" width="768" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="34"/>
-                                <state key="normal" title="Water bill in June/July/August?">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <state key="normal" title="Enter average summer water consumption*">
                                     <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Summer Water Bill" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g70-11-orr">
-                                <rect key="frame" x="193" y="196" width="383" height="52"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Summer Water Consumption (Units)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g70-11-orr">
+                                <rect key="frame" x="145" y="196" width="479" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="waterUsage:" destination="KTe-Ob-EbH" eventType="editingDidEnd" id="Dl0-Qv-Tf8"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Winter Water Bill" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4W-pl-1gn">
-                                <rect key="frame" x="193" y="422" width="383" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiv-mB-rkB">
+                                <rect key="frame" x="20" y="335" width="748" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <state key="normal" title="Enter average winter water consumption**">
+                                    <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* &amp; ** water consumption usually in units. 1 unit = 1000 Gallons of water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Z-lZ-Jve">
+                                <rect key="frame" x="33" y="749" width="715" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" red="0.30712825012741285" green="0.40763883593729477" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Winter Water Consumption(Units)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4W-pl-1gn">
+                                <rect key="frame" x="145" y="411" width="479" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="33"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="waterUsage:" destination="KTe-Ob-EbH" eventType="editingDidEnd" id="gbu-xK-kli"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiv-mB-rkB">
-                                <rect key="frame" x="20" y="335" width="768" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="34"/>
-                                <state key="normal" title="Water bill in December/January/February?">
-                                    <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="E0y-9V-Hw6"/>
@@ -469,7 +483,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbS-hl-z2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KTe-Ob-EbH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="859" y="-35"/>
+            <point key="canvasLocation" x="858.59375" y="-35.15625"/>
         </scene>
         <!--Type Of Grass-->
         <scene sceneID="ilM-xe-FiB">
@@ -618,6 +632,46 @@
                                 <connections>
                                     <action selector="saveGrassType:" destination="4fF-gc-KHG" eventType="touchUpInside" id="Z9N-Og-9jP"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-ow-1Ay">
+                                <rect key="frame" x="442" y="188" width="287" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="43"/>
+                                <state key="normal" title="St. Augustine">
+                                    <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttV-PV-3c4">
+                                <rect key="frame" x="442" y="484" width="287" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="43"/>
+                                <state key="normal" title="Bermuda">
+                                    <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpz-KW-pCP">
+                                <rect key="frame" x="442" y="635" width="287" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="43"/>
+                                <state key="normal" title="Zoysia">
+                                    <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JB-8i-Rrj">
+                                <rect key="frame" x="442" y="800" width="287" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="43"/>
+                                <state key="normal" title="Habiturf">
+                                    <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lh-VN-jNP">
+                                <rect key="frame" x="442" y="331" width="287" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="43"/>
+                                <state key="normal" title="Buffalo">
+                                    <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -787,7 +841,7 @@
             </objects>
             <point key="canvasLocation" x="2302.34375" y="-470.50781249999994"/>
         </scene>
-        <!--Reccomendations-->
+        <!--Recomendations-->
         <scene sceneID="2Cq-Vn-UKi">
             <objects>
                 <viewController id="ciJ-iN-Ghz" customClass="ReccomendationsViewController" customModule="XeriSavings" customModuleProvider="target" sceneMemberID="viewController">
@@ -922,7 +976,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XY1-86-e1P"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Reccomendations" id="NhW-v1-8UM">
+                    <navigationItem key="navigationItem" title="Recomendations" id="NhW-v1-8UM">
                         <barButtonItem key="rightBarButtonItem" title="Welcome" id="yty-dl-QvG">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" identifier="goToWelcomePage" id="VBK-GS-2KI"/>
@@ -988,10 +1042,10 @@
                                     <action selector="registerUserClicked:" destination="obh-UV-STL" eventType="touchUpInside" id="GQ2-eX-Vvt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-jO-5KV">
-                                <rect key="frame" x="164" y="276" width="441" height="82"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-jO-5KV">
+                                <rect key="frame" x="20" y="276" width="728" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" red="0.94398099184036255" green="0.077558569610118866" blue="0.040505416691303253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1011,7 +1065,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpg-bs-NE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="-742"/>
+            <point key="canvasLocation" x="203.90625" y="-742.3828125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfQ-QS-Uul">
@@ -1436,6 +1490,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="OHG-47-u2k"/>
         <segue reference="C9r-6q-LPc"/>
-        <segue reference="Xeq-py-Gce"/>
+        <segue reference="VBK-GS-2KI"/>
     </inferredMetricsTieBreakers>
 </document>

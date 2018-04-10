@@ -41,21 +41,13 @@ class AllAboutYourLawnViewController: UIViewController {
         let uid : String = (FIRAuth.auth()?.currentUser?.uid)!
         
         let aboutYourLawn = ["email":username as String?,
-                             "WaterUsage": String(calculateWaterUsage())]
+                             "summer_water_consumption": summerWaterBillTextField.text,
+                             "winter_water_consumption": WinterWaterBillTextField.text]
         
         aboutYourLawnDB?.child(uid).setValue(aboutYourLawn)
         performSegue(withIdentifier: "goToAllAboutYourLawn", sender: UIButton())
         
     }
-    
-    func calculateWaterUsage() -> Float {
-        let summerUsage = (summerWaterBillTextField.text as NSString?)?.floatValue
-        let winterUsage = (WinterWaterBillTextField.text as NSString?)?.floatValue
-        
-        return summerUsage! - winterUsage!
-        
-    }
-    //Making sure the computer can differ from the grass type by the tags, and saving it to the Firebase.
     
     @IBAction func saveGrassType(_ sender: DLRadioButton) {
         var typeOfGrass: String
