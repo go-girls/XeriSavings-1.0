@@ -13,7 +13,7 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XeriSavings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="XeriSavings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,19 +22,6 @@
                                 <rect key="frame" x="0.0" y="840" width="768" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-cV-ga9">
-                                <rect key="frame" x="0.0" y="732" width="768" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.28209063234541948" blue="0.37826534455197713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
-                                <color key="tintColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="WO5-Lw-WDL" kind="show" identifier="goToSignIn" id="LWE-16-Gex"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWE-q6-E8o">
                                 <rect key="frame" x="0.0" y="607" width="768" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,7 +58,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4JQ-eE-E1E" kind="show" identifier="goToCreateYourProject" id="C9r-6q-LPc"/>
+                                    <action selector="guestLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zYV-Si-U0m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2q-7x-3G4">
@@ -94,20 +81,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-cV-ga9">
+                                <rect key="frame" x="0.0" y="732" width="768" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.28209063234541948" blue="0.37826534455197713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
+                                <color key="tintColor" red="0.72064429480000003" green="0.82158475519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginLogoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cD6-g1-nuD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="wt6-YI-se6"/>
+                    <connections>
+                        <outlet property="loginLogoutButton" destination="wK1-cV-ga9" id="2EM-Av-bkT"/>
+                        <segue destination="WO5-Lw-WDL" kind="show" identifier="goToLogin" id="ShN-ne-dY7"/>
+                        <segue destination="4JQ-eE-E1E" kind="show" identifier="gotoCreateProjectFromGuest" id="wKq-Jm-I2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="38.28125" y="-1526.3671875"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Us View Controller-->
         <scene sceneID="Upq-ob-7jq">
             <objects>
-                <viewController id="kDd-RQ-KIc" sceneMemberID="viewController">
+                <viewController id="kDd-RQ-KIc" customClass="ContactUsViewController" customModule="XeriSavings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DAn-8t-Cbt">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,6 +168,9 @@
                                 <state key="normal" title="Instagram: @fllcluboreo">
                                     <color key="titleColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="oreoInstagramButton:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="y3O-Jp-85n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipk-V8-UZv">
                                 <rect key="frame" x="434" y="379" width="204" height="42"/>
@@ -171,6 +179,9 @@
                                 <state key="normal" title="Twitter: @fllcluboreo">
                                     <color key="titleColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="oreoTwitterButton:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="q3F-Ha-N9T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-Ji-GS2">
                                 <rect key="frame" x="406" y="434" width="275" height="42"/>
@@ -179,6 +190,9 @@
                                 <state key="normal" title="Facebook: @ClubOreoFLL">
                                     <color key="titleColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="oreoFacebookButton:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="0ds-TV-Z56"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-SK-aSd">
                                 <rect key="frame" x="76" y="424" width="145" height="63"/>
@@ -195,6 +209,9 @@
                                 <state key="normal" title="https://www.cluboreo.com">
                                     <color key="titleColor" red="0.35570952300000003" green="0.54583221670000004" blue="0.86539334059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="oreoWebsiteButton:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="H5d-aQ-paY"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lAG-uG-deA">
                                 <rect key="frame" x="386" y="484" width="406" height="330"/>
@@ -207,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80I-rX-haO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103.125" y="-2198.4375"/>
+            <point key="canvasLocation" x="508" y="-2538"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Hk-s7-8rb">
@@ -254,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L01-DP-6EP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779.6875" y="-2204.296875"/>
+            <point key="canvasLocation" x="508" y="-3285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QYx-ie-1qz">
@@ -268,13 +285,13 @@
                                 <rect key="frame" x="63" y="103" width="664" height="632"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">We are Club Oreo, #14938, an all-girls FLL team. Club Oreo will not share personal information with others for purposes of direct marketing. Club Oreo will not be held responsible for lost, stolen, or shared information regarding: email address, and/or passwords. 
+                                <mutableString key="text">We are Club Oreo, #14938, an all-girls FLL team. Club Oreo will not share personal information with others for purposes of direct marketing. Club Oreo will not be held responsible for lost, stolen, or shared information regarding: email address, and/or passwords. 
 
 Club Oreo does not guarantee that the app or any content, service or feature of the app will be error-free or uninterrupted, or that any defects will be corrected, or that your use of the site will provide specific results. Please also regard that the reccomendations are only estimates, and not exact data. We calculated this based on the SLIDE formula. 
 
 Any participation in this app will constitute acceptance of this agreement. If you do not agree to abide by the above, please do not use this app.                
 I agree to the above statement provided by Club Oreo
-</string>
+</mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -293,7 +310,7 @@ I agree to the above statement provided by Club Oreo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kio-gO-Akz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487.5" y="-2653.125"/>
+            <point key="canvasLocation" x="2375" y="-3009"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="9x5-ex-isU">
@@ -360,7 +377,7 @@ I agree to the above statement provided by Club Oreo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Taz-Bv-t3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-535.15625" y="-770.5078125"/>
+            <point key="canvasLocation" x="-1001" y="-324"/>
         </scene>
         <!--Home-->
         <scene sceneID="XCd-7O-6hR">
@@ -389,17 +406,11 @@ I agree to the above statement provided by Club Oreo
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="p0C-z2-W5W"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="qxu-PX-AmC">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="CF6-qR-09k">
-                            <connections>
-                                <action selector="logOutPressed:" destination="4JQ-eE-E1E" id="2TS-Rc-azA"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="qxu-PX-AmC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWI-7h-2F8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="-742"/>
+            <point key="canvasLocation" x="840" y="-324"/>
         </scene>
         <!--All About Your Lawn-->
         <scene sceneID="uQD-rx-LuS">
@@ -417,7 +428,7 @@ I agree to the above statement provided by Club Oreo
                                 <rect key="frame" x="0.0" y="135" width="768" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
-                                <state key="normal" title="Enter average summer water consumption*">
+                                <state key="normal" title="Enter average summer water consumption">
                                     <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -435,18 +446,18 @@ I agree to the above statement provided by Club Oreo
                                 <rect key="frame" x="20" y="335" width="748" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
-                                <state key="normal" title="Enter average winter water consumption**">
+                                <state key="normal" title="Enter average winter water consumption">
                                     <color key="titleColor" red="0.044356757609999999" green="0.044356757609999999" blue="0.044356757609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* &amp; ** water consumption usually in units. 1 unit = 1000 Gallons of water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Z-lZ-Jve">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="water consumption usually in units. 1 unit = 1000 Gallons of water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Z-lZ-Jve">
                                 <rect key="frame" x="33" y="749" width="715" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" red="0.30712825012741285" green="0.40763883593729477" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Winter Water Consumption(Units)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4W-pl-1gn">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Winter Water Consumption(Units)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4W-pl-1gn">
                                 <rect key="frame" x="145" y="411" width="479" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -461,17 +472,9 @@ I agree to the above statement provided by Club Oreo
                         <viewLayoutGuide key="safeArea" id="E0y-9V-Hw6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Water Usage" id="jEM-8S-VPl">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="uSK-bS-63F">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ri6-CY-Gjz">
-                                <rect key="frame" x="578" y="7" width="170" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="SaveWaterUsageAction:" destination="87Q-3l-h2m" eventType="touchUpInside" id="y4S-a0-cAC"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="FQt-dg-g7z">
                             <connections>
-                                <segue destination="4fF-gc-KHG" kind="show" identifier="goToAllAboutYourLawn" id="0yH-ne-lkO"/>
+                                <segue destination="4fF-gc-KHG" kind="show" id="hDt-bE-Ifx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -483,7 +486,7 @@ I agree to the above statement provided by Club Oreo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbS-hl-z2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KTe-Ob-EbH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="858.59375" y="-35.15625"/>
+            <point key="canvasLocation" x="545" y="877"/>
         </scene>
         <!--Type Of Grass-->
         <scene sceneID="ilM-xe-FiB">
@@ -693,7 +696,7 @@ I agree to the above statement provided by Club Oreo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2v-fx-PEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.8125" y="-567.1875"/>
+            <point key="canvasLocation" x="1476" y="877"/>
         </scene>
         <!--Size of Your Lawn-->
         <scene sceneID="b1R-9r-oTA">
@@ -717,7 +720,7 @@ I agree to the above statement provided by Club Oreo
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Large (l5,000 - 10,000 sq ft)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKw-ml-Pgd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Large (5,000 - 10,000 sq ft)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKw-ml-Pgd">
                                 <rect key="frame" x="60" y="519" width="414" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="29"/>
@@ -839,7 +842,7 @@ I agree to the above statement provided by Club Oreo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ees-Pg-TwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302.34375" y="-470.50781249999994"/>
+            <point key="canvasLocation" x="2447" y="877"/>
         </scene>
         <!--Recomendations-->
         <scene sceneID="2Cq-Vn-UKi">
@@ -994,7 +997,7 @@ I agree to the above statement provided by Club Oreo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vb-Wp-bJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2405" y="-1491"/>
+            <point key="canvasLocation" x="3021" y="-1295"/>
         </scene>
         <!--Register-->
         <scene sceneID="vfm-Ii-EJ1">
@@ -1042,7 +1045,7 @@ I agree to the above statement provided by Club Oreo
                                     <action selector="registerUserClicked:" destination="obh-UV-STL" eventType="touchUpInside" id="GQ2-eX-Vvt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-jO-5KV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-jO-5KV">
                                 <rect key="frame" x="20" y="276" width="728" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="19"/>
@@ -1065,12 +1068,12 @@ I agree to the above statement provided by Club Oreo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpg-bs-NE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="203.90625" y="-742.3828125"/>
+            <point key="canvasLocation" x="-115" y="-324"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfQ-QS-Uul">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YmF-5S-8Mu" sceneMemberID="viewController">
+                <navigationController id="YmF-5S-8Mu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tvM-UQ-2Vj">
                         <rect key="frame" x="0.0" y="20" width="768" height="44"/>
@@ -1463,7 +1466,7 @@ I agree to the above statement provided by Club Oreo
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-6U-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="-1506"/>
+            <point key="canvasLocation" x="1727" y="-1295"/>
         </scene>
     </scenes>
     <resources>
@@ -1488,8 +1491,8 @@ I agree to the above statement provided by Club Oreo
         <image name="logo" width="210" height="210"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OHG-47-u2k"/>
-        <segue reference="C9r-6q-LPc"/>
+        <segue reference="1Jp-Ah-BYn"/>
+        <segue reference="ZU7-hk-dV9"/>
         <segue reference="VBK-GS-2KI"/>
     </inferredMetricsTieBreakers>
 </document>
