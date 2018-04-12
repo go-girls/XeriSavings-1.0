@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D822C7A8554ED43DF0B85C38B15EE0C"
+               BlueprintIdentifier = "AD1C5A271FAEBCEF90DC53EA2C4F27F6"
                BuildableName = "Pods_XeriSavings.framework"
                BlueprintName = "Pods-XeriSavings"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D822C7A8554ED43DF0B85C38B15EE0C"
+            BlueprintIdentifier = "AD1C5A271FAEBCEF90DC53EA2C4F27F6"
             BuildableName = "Pods_XeriSavings.framework"
             BlueprintName = "Pods-XeriSavings"
             ReferencedContainer = "container:Pods.xcodeproj">

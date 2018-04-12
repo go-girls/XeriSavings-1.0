@@ -172,9 +172,7 @@
                                     <color key="titleColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-
                                     <action selector="instaButton:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="gBF-aE-asT"/>
-
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipk-V8-UZv">
@@ -185,7 +183,6 @@
                                     <color key="titleColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-
                                     <action selector="twitterButton:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="G5L-QG-28h"/>
                                 </connections>
                             </button>
@@ -197,7 +194,6 @@
                                     <color key="titleColor" red="0.38016587499999999" green="0.66893261670000004" blue="0.79851067070000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-
                                     <action selector="facebookButton:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="mF2-kW-EFs"/>
                                 </connections>
                             </button>
@@ -217,7 +213,6 @@
                                     <color key="titleColor" red="0.35570952300000003" green="0.54583221670000004" blue="0.86539334059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-
                                     <action selector="website:" destination="kDd-RQ-KIc" eventType="touchUpInside" id="H4j-f1-U1d"/>
                                 </connections>
                             </button>
@@ -293,13 +288,13 @@
                                 <rect key="frame" x="52" y="89" width="664" height="632"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">We are Club Oreo, #14938, an all-girls FLL team. Club Oreo will not share personal information with others for purposes of direct marketing. Club Oreo will not be held responsible for lost, stolen, or shared information regarding: email address, and/or passwords. 
+                                <string key="text">We are Club Oreo, #14938, an all-girls FLL team. Club Oreo will not share personal information with others for purposes of direct marketing. Club Oreo will not be held responsible for lost, stolen, or shared information regarding: email address, and/or passwords. 
 
 Club Oreo does not guarantee that the app or any content, service or feature of the app will be error-free or uninterrupted, or that any defects will be corrected, or that your use of the site will provide specific results. Please also regard that the reccomendations are only estimates, and not exact data. We calculated this based on the SLIDE formula. 
 
 Any participation in this app will constitute acceptance of this agreement. If you do not agree to abide by the above, please do not use this app.                                                                                
 I agree to the above statement provided by Club Oreo
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -494,7 +489,7 @@ I agree to the above statement provided by Club Oreo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbS-hl-z2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KTe-Ob-EbH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="545" y="877"/>
+            <point key="canvasLocation" x="-884" y="-3469"/>
         </scene>
         <!--Type Of Grass-->
         <scene sceneID="ilM-xe-FiB">
@@ -1480,7 +1475,6 @@ I agree to the above statement provided by Club Oreo
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-6U-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="1390.625" y="-1506.4453125"/>
         </scene>
     </scenes>
@@ -1506,8 +1500,9 @@ I agree to the above statement provided by Club Oreo
         <image name="logo" width="210" height="210"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Obu-6F-EF9"/>
         <segue reference="1Jp-Ah-BYn"/>
-        <segue reference="ZU7-hk-dV9"/>
+        <segue reference="jjX-dH-3lM"/>
         <segue reference="VBK-GS-2KI"/>
     </inferredMetricsTieBreakers>
 </document>

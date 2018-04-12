@@ -10,7 +10,5 @@ pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'DLRadioButton', '~> 1.4'
-pod 'SVProgressHUD'
-
 
 end
