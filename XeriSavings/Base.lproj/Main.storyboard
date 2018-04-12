@@ -1447,7 +1447,7 @@ I agree to the above statement provided by Club Oreo
                                                     <rect key="frame" x="210" y="8" width="344" height="193"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="This is comprised mainly of native plants for a gorgeous combination of decoration that saves water!" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kj2-eg-Je3">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="This is comprised mainly of native plants for a gorgeous combination of decoration that saves water!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kj2-eg-Je3">
                                                     <rect key="frame" x="562" y="11" width="198" height="139"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1500,7 +1500,6 @@ I agree to the above statement provided by Club Oreo
         <image name="logo" width="210" height="210"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Obu-6F-EF9"/>
         <segue reference="1Jp-Ah-BYn"/>
         <segue reference="jjX-dH-3lM"/>
         <segue reference="VBK-GS-2KI"/>
