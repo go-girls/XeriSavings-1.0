@@ -22,14 +22,14 @@ class GalleryViewController: UITableViewController {
     }
     
     @IBAction func ecotopeswebsite(_ sender: Any) {
-        let url = NSURL(string: "https://http://ecotopes.com")
+        let url = NSURL(string: "http://ecotopes.com")
         UIApplication.shared.open(url! as URL, options: [:], completionHandler:nil)
 
     }
     
     
     @IBAction func LaRosewebsite(_ sender: Any) {
-        let url = NSURL(string: "https://http://laroselandscape.com")
+        let url = NSURL(string: "http://laroselandscape.com")
         UIApplication.shared.open(url! as URL, options: [:], completionHandler:nil)
     }
     
