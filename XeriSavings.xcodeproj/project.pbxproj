@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48188889207EE5E40017B858 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48188888207EE5E40017B858 /* GalleryViewController.swift */; };
+		48A7AB7E207EC3A500E41ED6 /* SocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7AB7D207EC3A500E41ED6 /* SocialMediaViewController.swift */; };
 		A8844C4A207B191700A603DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8844C48207B191700A603DB /* Main.storyboard */; };
 		A8844C4C207BD28000A603DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8844C4B207BD28000A603DB /* WelcomeViewController.swift */; };
 		A8AE9B532067EE390019EDAA /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AE9B522067EE390019EDAA /* CreateProjectViewController.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		023E8CEB5E5D9232F0CD65C5 /* Pods_XeriSavings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XeriSavings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48188888207EE5E40017B858 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		48A7AB7D207EC3A500E41ED6 /* SocialMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaViewController.swift; sourceTree = "<group>"; };
 		83255655E9B95D486AAE1AC4 /* Pods-XeriSavings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XeriSavings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings.debug.xcconfig"; sourceTree = "<group>"; };
 		A6EA73C94C4E609FDD9CF084 /* Pods-XeriSavings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XeriSavings.release.xcconfig"; path = "Pods/Target Support Files/Pods-XeriSavings/Pods-XeriSavings.release.xcconfig"; sourceTree = "<group>"; };
 		A8844C49207B191700A603DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		A8B3BFB12067DFAD00E049FC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				48A7AB7D207EC3A500E41ED6 /* SocialMediaViewController.swift */,
 				A8BEEE4D206DEA3900D921DC /* AllAboutYourLawnViewController.swift */,
 				A8AE9B522067EE390019EDAA /* CreateProjectViewController.swift */,
 				A8B3BF9B2067D06E00E049FC /* AppDelegate.swift */,
@@ -102,6 +107,7 @@
 				A8B3BFAD2067D30A00E049FC /* RegisterViewController.swift */,
 				A8F093182079A2A800C96AE2 /* ReccomendationsViewController.swift */,
 				A8844C4B207BD28000A603DB /* WelcomeViewController.swift */,
+				48188888207EE5E40017B858 /* GalleryViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -268,11 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8B3BFB02067D60400E049FC /* LoginViewController.swift in Sources */,
+				48A7AB7E207EC3A500E41ED6 /* SocialMediaViewController.swift in Sources */,
 				A8844C4C207BD28000A603DB /* WelcomeViewController.swift in Sources */,
 				A8BEEE4E206DEA3900D921DC /* AllAboutYourLawnViewController.swift in Sources */,
 				A8B3BFAE2067D30A00E049FC /* RegisterViewController.swift in Sources */,
 				A8F093192079A2A800C96AE2 /* ReccomendationsViewController.swift in Sources */,
 				A8AE9B532067EE390019EDAA /* CreateProjectViewController.swift in Sources */,
+				48188889207EE5E40017B858 /* GalleryViewController.swift in Sources */,
 				A8B3BF9E2067D06E00E049FC /* ViewController.swift in Sources */,
 				A8B3BF9C2067D06E00E049FC /* AppDelegate.swift in Sources */,
 			);
