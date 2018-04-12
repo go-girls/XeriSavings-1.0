@@ -1374,7 +1374,7 @@ I agree to the above statement provided by Club Oreo
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beardsley Cove Yard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPK-WB-5q6">
-                                                    <rect key="frame" x="20" y="147" width="265" height="40"/>
+                                                    <rect key="frame" x="20" y="149" width="265" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                                                     <nil key="textColor"/>
@@ -1385,7 +1385,7 @@ I agree to the above statement provided by Club Oreo
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-pj-6rg">
-                                                    <rect key="frame" x="8" y="8" width="404" height="153"/>
+                                                    <rect key="frame" x="8" y="8" width="404" height="120"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <string key="text">To decorate their front porch, there is some beautiful native plants that won't need much watering and make the place beautiful. </string>
@@ -1484,7 +1484,7 @@ I agree to the above statement provided by Club Oreo
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-6U-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="-1506"/>
+            <point key="canvasLocation" x="1390.625" y="-1506.4453125"/>
         </scene>
     </scenes>
     <resources>
